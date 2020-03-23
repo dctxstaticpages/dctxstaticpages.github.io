@@ -114,24 +114,229 @@ section {
 
 .about .card-content p {
 	font-size: 1.25rem;
-	padding-right: 40px;
+	padding-right: 80px;
 }
 
 .about .card-image {
 	max-width: 367px;
 }
 
+.about .button-contact-us {
+	background: transparent;
+	color: #00bcd4;
+}
+
+.about .button-contact-us:hover {
+	background: #00bcd4;
+	color: #fff;
+}
+
+.solutions {
+	margin-bottom: 84px;
+}
+
 .solutions .card-image {
 	max-width: 160px;
 	width: 160px;
+	margin-right: 1rem;
+	padding: 20px 0;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .solutions .card-image img {
-	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+	width: auto;
+}
+
+.solutions .cards .card-content {
+	padding-right: 30px;
+}
+
+.solutions .cards .card:last-of-type {
+	margin-bottom: 0;
 }
 
 .solutions .card-content h3 {
 	color: #00bcd4;
+}
+
+.solutions .card-image-user-search {
+	background: #E8CA04;
+}
+
+.solutions .card-image-management {
+	background: #EA641D;
+}
+
+.solutions .card-image-user {
+	background: #00BCD4;
+}
+
+.solutions .card-image-shield {
+	background: #7F08FF;
+}
+
+.solutions .card-image-open-source {
+	background: #71B406;
+}
+
+.our-volunteers {
+	margin: 0;
+	padding: 64px 0;
+	background: #F1F2F0;
+}
+
+.our-volunteers h2 {
+	margin-bottom: 30px;
+}
+
+.our-volunteers .description {
+	width: 65%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.our-volunteers .button-group {
+	margin-bottom: 0;
+}
+
+.our-volunteers .button {
+	font-size: 1.5rem;
+}
+
+.our-volunteers .cards {
+	margin-top: 25px;
+}
+
+.our-volunteers .cards .card {
+	margin: 0 10px 0;
+	text-align: center;
+	width: 220px;
+}
+
+.our-volunteers .card-image {
+	padding: 20px 0;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.our-volunteers .card-image-developer {
+	background: #E8CA04;
+}
+
+.our-volunteers .card-image-developer p {
+	color: #fff;
+}
+
+.our-volunteers .card-image-legal p {
+	color: #EA641D;
+}
+
+.our-volunteers .card-image-medical p {
+	color: #7F08FF;
+}
+
+.our-volunteers .card-image-designers p {
+	color: #71B406;
+}
+
+.our-volunteers .card-image img {
+	padding-top: 20px;
+	width: auto;
+}
+
+.our-volunteers .card-image p {
+	font-weight: 600;
+	font-size: 0.85rem;
+	padding: 20px 0 10px;
+}
+
+.our-volunteers .button-group {
+	margin-top: 60px;
+}
+
+.get-involved {
+	margin: 0 auto;
+	padding: 64px 0;
+	background: #00BCD4;
+	color: #fff;
+}
+
+.get-involved .description {
+	width: 73%;
+	margin: 0 auto;
+}
+
+.get-involved .description p {
+	text-align: center;
+	padding-bottom: 0;
+}
+
+.get-involved .button-group {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.get-involved .button-group  .button {
+	border: 2px solid transparent;
+	font-size: 1.5rem;
+	width: 220px;
+}
+
+.get-involved .button-group  .button:first-of-type {
+	background: #fff;
+	color: #00BCD4;
+}
+
+.get-involved .button-group  .button:first-of-type:hover {
+	border: 2px solid #fff;
+	color: #fff;
+	background: transparent;
+}
+
+.get-involved .button-group  .button:last-of-type {
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+.get-involved .button-group  .button:last-of-type:hover {
+	background: #fff;
+	color: #00BCD4;
+}
+
+footer {
+	padding: 50px 0;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: #000;
+}
+
+footer a:hover {
+	color: #00BCD4;
+}
+
+footer p:first-of-type {
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 15px;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 40px;
+}
+
+footer p:last-of-type {
+	padding-bottom: 10px;
 }
 
 .button-group {
@@ -190,6 +395,16 @@ section {
 }
 
 /* RESPONSIVE STYLES */
+@media (max-width: 1016px) {
+	.our-volunteers .cards .card {
+		margin-bottom: 20px;
+	}
+
+	.our-volunteers .cards .card:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
 @media (max-width: 860px) {
 	header .header-container > div {
 		text-align: center;
@@ -235,8 +450,9 @@ section {
 		margin: 10px auto;
 	}
 
-	.solutions .card-image {
-		margin-bottom: 20px;
+	.cards .card {
+		margin-bottom: 35px;
+		max-width: 100%;
 	}
 
 	.card-content {
@@ -247,11 +463,31 @@ section {
 		padding-right: 0;
 	}
 
-	.cards .card {
-		margin-bottom: 35px;
-		max-width: 100%;
+	.solutions .cards {
+		margin-top: 40px;
 	}
 
+	.solutions .card-image {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.solutions .cards .card {
+		margin-bottom: 45px;
+	}
+
+	.our-volunteers .card-image {
+		width: 240px;
+	}
+
+	footer {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	footer p:last-of-type {
+		padding-bottom: 0;
+	}
 }
 
 @media (max-width: 640px) {
