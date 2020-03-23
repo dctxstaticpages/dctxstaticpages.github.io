@@ -137,6 +137,8 @@ section {
 .button-group {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .button-group .button:not(:last-of-type),
@@ -224,8 +226,6 @@ section {
 
 	.button-group {
 		flex-direction: column;
-		margin-bottom: 20px;
-		margin-top: 20px;
 	}
 
 	.button-group .button:not(:last-of-type),
