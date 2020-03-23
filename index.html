@@ -3,8 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<title>DCTx Landing Page</title>
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Welcome to DCTx Landing Page</h1>
+	<!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+	<div id="preloader"></div>
+
+	<header>
+		<div class="header-container">
+			<div class="container clearfix">
+				<a href="#" class="logo" title="DCTx"><img src="img/logo.png" alt="DCTx"></a>
+
+				<nav class="nav-main">
+					<ul class="clearfix">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Our Projects</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Be a Volunteer</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+	<script>
+		(function($) {
+			$(window).on('load', function() {
+				$('#preloader').delay(100).fadeOut('slow', function() {
+					$(this).remove();
+				});
+			});
+		})(jQuery);
+	</script>
 </body>
 </html>

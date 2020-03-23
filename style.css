@@ -1,0 +1,148 @@
+html {
+	background: #fff;
+	color: #000;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+body {
+	margin: 0;
+}
+
+#preloader {
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	z-index: 999; 
+	width: 100%; 
+	height: 100%; 
+	overflow: visible; 
+	background: #fff url("img/preloader.svg") no-repeat center center; 
+}
+
+.browserupgrade { 
+	font-size: 1em; 
+	background: #333; 
+	color: #fff; 
+	padding: 1em; 
+	margin: 0; 
+	text-align: center; 
+}
+
+.browserupgrade a {
+	color: #aaa;
+}
+
+.browserupgrade a:hover {
+	color: #fff;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header .header-container {
+	padding: 20px 0;
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+header .header-container .logo {
+	display: block;
+	float: left;
+}
+
+header .header-container .logo img {
+	width: 194px;
+	display: block;
+}
+
+header .header-container .nav-main {
+	float: right;
+}
+
+header .header-container .nav-main ul {
+	list-style: none;
+	padding: 0;
+	margin: 6px 0 0;
+}
+
+header .header-container .nav-main li {
+	float: left;
+}
+
+header .header-container .nav-main li:last-of-type {
+	margin-right: 0;
+}
+
+header .header-container .nav-main a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 600;
+	font-size: 1.1rem;
+	padding: 5px 10px;
+	display: block;
+	border: 1px solid transparent;
+}
+
+header .header-container .nav-main a:hover {
+	color: #71B406;
+	border-radius: 4px;
+	border: 1px solid #71B406;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+header .header-container .nav-main li.active a {
+	color: #71B406;
+}
+
+@media (max-width: 860px) {
+	header .header-container > div {
+		text-align: center;
+	}
+
+	header .header-container .logo,
+	header .header-container .nav-main {
+		float: none;
+		margin: 10px auto 0;
+	}
+
+	header .header-container .logo img,
+	header .header-container .nav-main ul {
+		display: inline-block;
+	}
+
+	header .header-container .nav-main li {
+		margin: 0 3px 0;
+	}
+
+	header .header-container .nav-main a {
+		border: 1px solid #000;
+		border-radius: 4px;
+	}
+
+	header .header-container .nav-main a:hover {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 600px) {
+	header .header-container .nav-main ul {
+		width: 100%;
+	}
+
+	header .header-container .nav-main li {
+		float: none;
+		margin: 0 0 5px 0;
+	}
+
+	header .header-container .nav-main li:last-of-type {
+		margin-bottom: 0;
+	}
+}
