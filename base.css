@@ -76,15 +76,15 @@ a {
 button,
 input[type="submit"],
 .button {
-	background-color: #00bcd4;
-    border: 1px solid #00bcd4;
-    border-radius: 4px;
+	background-color: #5e35b1;
+    border: 1px solid #5e35b1;
+    border-radius: 30px;
     color: #fff;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 1.125rem;
 	font-weight: 600;
-    padding: 10px 36px;
+    padding: 8px 36px;
     text-align: center;
     text-decoration: none;
 	transition: all 0.3s ease;
@@ -107,7 +107,7 @@ input[type="submit"]:active,
 .button:focus,
 .button:active {
 	background-color: transparent;
-	color: #00bcd4;
+	color: #5e35b1;
 }
 
 input[type="text"],
