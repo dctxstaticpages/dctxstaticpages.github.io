@@ -270,30 +270,80 @@ header .header-container .nav-main li:last-of-type a:hover {
 }
 
 .our-volunteers .card-image {
-	padding: 20px 0;
+	padding: 40px 0 20px;
 	background: #fff;
 	border-radius: 8px;
 	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-.our-volunteers .card-image-developer {
-	background: #E8CA04;
+.our-volunteers .card-image-developer,
+.our-volunteers .card-image-legal,
+.our-volunteers .card-image-medical,
+.our-volunteers .card-image-designers {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.our-volunteers .card-image-developer svg path {
+	fill: #E8CA04;
 }
 
 .our-volunteers .card-image-developer p {
-	color: #fff;
+	color: #E8CA04;
+}
+
+.our-volunteers .card-image-developer:hover {
+	background: #E8CA04;
+}
+
+.our-volunteers .card-image-legal svg path {
+	fill: #EA641D;
 }
 
 .our-volunteers .card-image-legal p {
 	color: #EA641D;
 }
 
+.our-volunteers .card-image-legal:hover {
+	background: #EA641D;
+}
+
+.our-volunteers .card-image-medical svg path {
+	fill: #7F08FF;
+}
+
 .our-volunteers .card-image-medical p {
 	color: #7F08FF;
 }
 
+.our-volunteers .card-image-medical:hover {
+	background: #7F08FF;
+}
+
+.our-volunteers .card-image-designers svg path {
+	fill: #71B406;
+}
+
 .our-volunteers .card-image-designers p {
 	color: #71B406;
+}
+
+.our-volunteers .card-image-designers:hover {
+	background: #71B406;
+}
+
+.our-volunteers .card-image-developer:hover svg path,
+.our-volunteers .card-image-legal:hover svg path,
+.our-volunteers .card-image-medical:hover svg path,
+.our-volunteers .card-image-designers:hover svg path {
+	fill: #fff;
+}
+
+.our-volunteers .card-image-developer:hover p,
+.our-volunteers .card-image-legal:hover p,
+.our-volunteers .card-image-medical:hover p,
+.our-volunteers .card-image-designers:hover p {
+	color: #fff;
 }
 
 .our-volunteers .card-image img {
